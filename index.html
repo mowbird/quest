@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+	<meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia Serif Libre">
+    <style type="text/css">body { font-family: Averia Serif Libre; }</style>
+    <title>Quest, by Mowbird</title>
+    <script>
+        function generateRandomString() {
+            var strings = [
+                            "Help Jodie bury the bodies",
+                            "Choose a new name for Titus",
+                            "Take aim, close your eyes, send your mind to a new home",
+                            "Tell her you know Hades saw Jenny watching Calvin waiting",
+                            "Pick a future from the brochure",
+                            "Bless the fiery orb",
+                            "Banish the fiery orb",
+                            "Become one with the fiery orb",
+                        ];
+            var randomIndex = Math.floor(Math.random() * strings.length);
+            var randomString = strings[randomIndex];
+            document.getElementById("output").innerHTML = randomString;
+        }
+    </script>
+</head>
+<body>
+    <body bgcolor="#000000" text="#FFFFFF" link="#F67809" alink="#F7E808" vlink="#02FD16"></body>
+    <center>
+    <p><i>Need even more challenge in your life? Why don't you<br>
+    </i></p>
+    <h1 style="font-size: 10vw" id="output"></h1>
+    <button onclick="generateRandomString()">No thank you</button>
+    <p><i>Listen to Quest, the new album from Mowbird <a href="https://mowbird.bandcamp.com">here</a><br></i></p>
+    </center>
+    <body onload="generateRandomString()"
+</body>
+</html>
